@@ -10,7 +10,7 @@ const PORT = 9000;
 // Enable CORS for all routes
 app.use(
   cors({
-    origin: "https://storied-naiad-4fe8c6.netlify.app", // Allow requests from your React app
+    origin: "https://linked-in-sso-ptxnvm438-smfahim25s-projects.vercel.app", // Allow requests from your React app
   })
 );
 
@@ -19,7 +19,8 @@ app.use(bodyParser.json());
 // Your LinkedIn app credentials
 const CLIENT_ID = "860d5bd232a4cu";
 const CLIENT_SECRET = "WPL_AP1.TJmiU3pqdbrttvtG.ajVYpg==";
-const REDIRECT_URI = "https://storied-naiad-4fe8c6.netlify.app/auth/callback";
+const REDIRECT_URI =
+  "https://linked-in-sso-ptxnvm438-smfahim25s-projects.vercel.app/auth/callback";
 
 // Route to get access token
 app.post("/api/linkedin/access-token", async (req, res) => {
