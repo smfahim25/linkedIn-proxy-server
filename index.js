@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 // Your LinkedIn app credentials
 const CLIENT_ID = "860d5bd232a4cu";
 const CLIENT_SECRET = "WPL_AP1.TJmiU3pqdbrttvtG.ajVYpg==";
-const REDIRECT_URI = "http://localhost:3000/auth/callback";
+const REDIRECT_URI = "https://personal-sso-app.netlify.app/auth/callback";
 
 // Route to get access token
 app.post("/api/linkedin/access-token", async (req, res) => {
